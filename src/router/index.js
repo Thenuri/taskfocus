@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import Dashboard from '../views/Dashboard.vue'
+import Task from '../views/Task.vue'
+import Timer from '../views/Timer.vue'
 
 
 const routes = [
@@ -29,6 +31,17 @@ const routes = [
     component: Signup
   },
   {
+    path:'/Task',
+    name: 'task',
+    component: Task,
+
+  },
+  {
+    path:'/Timer',
+    name: 'timer',
+    component: Timer,
+  },
+  {
     path: '/Dashboard',
     name: 'dashboard',
     component: Dashboard,
@@ -36,6 +49,7 @@ const routes = [
       requiresAuth: true,
     },
   }
+
 ]
 const router = createRouter({
   history: createWebHistory(),
