@@ -55,10 +55,10 @@
             </div>
         </div>
         <div class="flex justify-center items-center mt-6">
-            <a href="#" target="_blank" class="inline-flex items-center text-gray-700  font-medium  text-xs text-center">
+            <router-link to="#" target="_blank" class="inline-flex items-center text-gray-700  font-medium  text-xs text-center">
                 <span class="ml-2">You have an account?
-                    <a href="#" class="text-xs ml-2 text-orange-500 font-semibold">Login here</a></span>
-            </a>
+                    <router-link to="#" class="text-xs ml-2 text-orange-500 font-semibold">Login here</router-link></span>
+            </router-link>
         </div>
     </div>
 </template>

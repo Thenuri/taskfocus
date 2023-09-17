@@ -13,7 +13,7 @@
                     Manage your work efficiently.
                     </h1>
                     <p class="text-white leading-relaxed  mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde atque commodi consequuntur voluptatem aut id amet. Modi non at, quisquam voluptates quam quidem architecto rerum id, nihil illo magnam?</p>
-                    <Button class="mt-2">Get Sarted</Button>
+                    <btn class="mt-2">Get Sarted</btn>
                 </div>
                 <div class="md:w-1/2">
                     <img src="../assets/task1.png" alt="">
@@ -55,13 +55,13 @@
 </template>
 
 <script>
-import Button from "../components/Button.vue";
+import btn from "../components/btn.vue";
 import Navbar from  "../components/Navbar.vue";
 export default {
  
   components: {
     Navbar,
-    Button
+    btn
   }
 };
 </script>

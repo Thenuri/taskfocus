@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router'
+import TheTimer from'./components/ui/TheTimer.vue'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -20,5 +21,6 @@ const firebaseConfig = {
  initializeApp(firebaseConfig);
 
 const app = createApp(App);
+app.component('the-timer', TheTimer);
 app.use(router);
 app.mount('#app');

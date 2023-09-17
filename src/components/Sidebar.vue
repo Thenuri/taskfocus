@@ -27,7 +27,7 @@
         <div class="overflow-y-auto  overflow-x-hidden flex flex-col justify-between flex-grow">
             <ul class="flex flex-col py-4 space-y-1">
                 <li>
-                    <a href="/"
+                    <router-link to="/"
                         class="relative flex flex-row items-center h-11 focus:outline-none border-l-4 border-transparent  pr-6">
                         <span class="inline-flex justify-center items-center ml-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@
                         </span>
                         <span class="ml-2 text-3xl font-bold tracking-wide truncate">Task<span
                                 class="text-orange-500">Focus</span></span>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="px-5 hidden md:block">
                     <div class="flex flex-row items-center h-8">
@@ -53,7 +53,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/Dashboard"
+                    <router-link to="/Dashboard"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500   rounded dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center ml-4">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -64,11 +64,11 @@
                             </svg>
                         </span>
                         <span class="ml-2 text-sm tracking-wide truncate">Dashboard</span>
-                    </a>
+                    </router-link>
                 </li>
 
                 <li>
-                    <a href="/Task"
+                    <router-link to="/Task"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent rounded  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center ml-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -76,10 +76,10 @@
                             </svg>
                         </span>
                         <span class="ml-2 text-sm tracking-wide truncate">Create Task</span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="/Timer"
+                    <router-link to="/Timer"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent rounded  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center ml-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -88,7 +88,7 @@
 
                         </span>
                         <span class="ml-2 text-sm tracking-wide truncate">Promodor Timer</span>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="px-5 hidden md:block">
                     <div class="flex flex-row items-center mt-5 h-8">
@@ -96,7 +96,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"
+                    <router-link to="#"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500 rounded  border-l-4 border-transparent  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center ml-4">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -106,10 +106,10 @@
                             </svg>
                         </span>
                         <span class="ml-2 text-sm tracking-wide truncate">Profile</span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="#"
+                    <router-link to="#"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500 rounded dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center ml-4">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -122,7 +122,7 @@
                             </svg>
                         </span>
                         <span class="ml-2 text-sm tracking-wide truncate">Settings</span>
-                    </a>
+                    </router-link>
                 </li> 
                 <li>
                     <div
