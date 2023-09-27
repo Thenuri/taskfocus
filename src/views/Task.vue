@@ -1,7 +1,7 @@
 <template>
     <div class="task">
         <Sidebar />
-
+        
     </div>
 </template>
 

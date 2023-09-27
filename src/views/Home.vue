@@ -9,11 +9,11 @@
         <div class="container py-20">
             <div class="flex flex-col items-center z-20 md:flex-row">
                 <div class="text-center mb-12  md:text-left md:w-1/2 md:pr-10">
-                    <h1  class="text-3xl text-white md:text-4xl font-bold  leading-snug mb-4">
+                    <h1  class="text-3xl text-color-secondary md:text-4xl font-bold  leading-snug mb-4">
                     Manage your work efficiently.
                     </h1>
                     <p class="text-white leading-relaxed  mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde atque commodi consequuntur voluptatem aut id amet. Modi non at, quisquam voluptates quam quidem architecto rerum id, nihil illo magnam?</p>
-                    <btn class="mt-2">Get Sarted</btn>
+                    <btn class="mt-2">Get Started</btn>
                 </div>
                 <div class="md:w-1/2">
                     <img src="../assets/task1.png" alt="">

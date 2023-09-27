@@ -4,17 +4,18 @@
         <div class="w-64 ">
             <Sidebar />
         </div>
+        <!-- <pause-before v-if="Pause_before_warn_is_active" @click="Pause_before_warn_is_active = false"/> -->
 
         <!-- Content -->
         <div class="flex-1 p-4">
             <!-- Your content goes here -->
-            <div class="text-2xl  px-8  ">
+            <!-- <div class="text-2xl  px-1  ">
                 Dashboard
-            </div>
+            </div> -->
 
             <div class="p-8 font-extrabold ">
                 <section id="whatCando" class="bg-color-primary-light">
-                    <div class="container py-5">
+                    <!-- <div class="container py-5">
 
                         <div
                             class=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
@@ -67,16 +68,35 @@
 
                             </div>
                         </div>
-                </div>
+                </div> -->
             </section>
         </div>
     </div>
-</div></template>
+    <!-- <div>
+        <Footer />
+    </div> -->
+</div>
 
-<script setup>
+</template>
+
+<script>
 import Sidebar from "../components/Sidebar.vue";
-components: {
-    Sidebar
+import PauseBefore from "../components/ui/warning_ui/PauseBefore.vue";
+export default {
+    name: "Dashboard",
+    components: {
+        Sidebar,
+        PauseBefore
+        // Footer
+
+    },
 }
+// components: {
+//     Sidebar,
+//     PauseBefore
+//     // Footer
+
+// }
+
 
 </script>

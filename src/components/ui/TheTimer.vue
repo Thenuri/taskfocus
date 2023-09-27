@@ -109,7 +109,7 @@ export default {
       } else {
         this.checkZeroOnSecs();
         this.currentSec--;
-        this.colon_flash(this.currentSec);
+        // this.colon_flash(this.currentSec);
       }
     },
     count() {
@@ -129,15 +129,15 @@ export default {
       this.change_timer_text();
     },
     // tek  ':' tek '' ...
-    colon_flash(sec) {
-      if (sec % 2 === 0) {
-        this.colom = " ";
-        this.$refs["theColom"].style.color = "var(--main-color)";
-      } else {
-        this.colom = ":";
-        this.$refs["theColom"].style.color = "white";
-      }
-    },
+    // colon_flash(sec) {
+    //   if (sec % 2 === 0) {
+    //     this.colom = " ";
+    //     this.$refs["theColom"].style.color = "var(--main-color)";
+    //   } else {
+    //     this.colom = ":";
+    //     this.$refs["theColom"].style.color = "white";
+    //   }
+    // },
   },
 };
 </script>

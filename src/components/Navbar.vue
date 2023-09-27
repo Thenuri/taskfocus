@@ -24,7 +24,7 @@
         :class="[open ? 'left-0' : 'left-[-100%]']">
         <li class="md:mx-4 md:my-0 my-6" v-for="link in links" :key="link.name">
           <router-link :to="link.link">
-            <a class="text-xl hover:text-orange-500">{{ link.name }}</a>
+            <a class="text-base hover:text-orange-500">{{ link.name }}</a>
           </router-link>
           <!-- <a :href="link.link" class="text-xl hover:text-orange-500">{{ link.name }}</a> -->
         </li>

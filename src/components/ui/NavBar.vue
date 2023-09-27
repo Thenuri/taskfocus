@@ -1,6 +1,6 @@
 <template>
     <div id="nav_container">
-        <nav-button btn-title="poromodo"
+        <nav-button btn-title="pomodoro"
             :class="{btn_item_active: activeTab === 'poroModo'}"
             @click="()=>{
                 reSelectTab('poroModo')
