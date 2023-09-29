@@ -4,7 +4,7 @@
     </div>
     <section id="home" class="relative">
         <div class="w-80 h-80 bg-purple-500 absolute top-0 -left-5 -z-20 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
-        <div class="w-80 h-80 bg-color-secondary absolute bottom-5 right-0 -z-20 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
+        <div class="w-80 h-80 bg-orange-500 absolute bottom-5 right-0 -z-20 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
 
         <div class="container py-20">
             <div class="flex flex-col items-center z-20 md:flex-row">
@@ -16,10 +16,9 @@
                     <btn class="mt-2">Get Started</btn>
                 </div>
                 <div class="md:w-1/2 ">
-                    <img src="../assets/task1.png" alt="">
+                    <img src="../assets/web9 (1).png" alt="">
                 </div>
             </div>
- 
         </div>
     </section>
     <section id="whatCando" class="bg-color-primary-light">

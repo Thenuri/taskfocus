@@ -42,7 +42,7 @@ svg {
 
 .progress-bar__progress {
   fill: none;
-  stroke: #151932;
+  stroke: #040611;
   stroke-dasharray: 100 100;
   /* controle the presentage */
   stroke-width: 2.2;

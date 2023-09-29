@@ -37,7 +37,7 @@ export default {
 </script>
 <style scoped>
    #nav_container{
-        background: #151932;
+        background: #313560;
         width: 320px;
         height: 50px;
         display: flex;
