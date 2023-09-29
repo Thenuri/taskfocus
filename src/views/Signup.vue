@@ -7,7 +7,7 @@
             <div class="container py-20 relative">
                 <div class="flex flex-col items-center justify-between md:flex-row">
                     <div class="mb-12 md:w-1/2">
-                        <img src="../assets/web2.png" alt="">
+                        <img src="../assets/web6.png" alt="">
                     </div>
                     <div>
                         <SignupForm/>

@@ -15,7 +15,7 @@
                     <p class="text-white leading-relaxed  mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde atque commodi consequuntur voluptatem aut id amet. Modi non at, quisquam voluptates quam quidem architecto rerum id, nihil illo magnam?</p>
                     <btn class="mt-2">Get Started</btn>
                 </div>
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 ">
                     <img src="../assets/task1.png" alt="">
                 </div>
             </div>

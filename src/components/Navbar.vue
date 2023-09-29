@@ -14,7 +14,7 @@
           </rect>
         </svg>
         
-        <a href="/" class="text-3xl font-bold">Task<span class="text-orange-500">Focus</span></a>
+        <a href="/" class="text-3xl ml-2 font-bold">Task<span class="text-orange-500">Focus</span></a>
       </div>
       <span @click="menuOpen" class="absolute md:hidden right-6 top-1.5 cursor-pointer text-4xl">
         <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left']"></i>
