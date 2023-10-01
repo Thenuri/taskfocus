@@ -77,6 +77,6 @@ export default {
 
 <style>
 .box{
-margin-left: 95px;
+margin-left: 100px;
 }
 </style>
