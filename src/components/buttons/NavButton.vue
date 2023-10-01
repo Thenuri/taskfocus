@@ -18,7 +18,7 @@ export default {
         align-items: center;
     }
     .btn_item span{
-        color: #555972;
+        color: #ffffff;
         font-weight: bold;
         transition: 0.1s ease;
         cursor: pointer;

@@ -10,7 +10,7 @@
             <!--  -->
             <ul class="flex items-center">
                 <li>
-                    <router-link to="/Settings"
+                    <router-link @click="checkTimer('/Settings')" to="/Settings"
                         class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center  ">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"

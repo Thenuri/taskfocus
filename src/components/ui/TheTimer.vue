@@ -13,7 +13,7 @@
           <!-- .#timer -->
           <span id="timer_text">{{ timer_text }}</span>
         </div>
-        <div v-if="percentage != 0" id="reset_timer" @click="click_reset">
+        <div class="text-white" v-if="percentage != 0" id="reset_timer" @click="click_reset">
           reset timer
         </div>
       </div>
@@ -201,7 +201,7 @@ span {
   font-weight: 500;
 }
 #reset_timer {
-  color: #353b71;
+  /* color: #353b71; */
   margin: 5px 0px;
   transition: 0.1s;
   font-size: 14px;
