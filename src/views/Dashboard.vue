@@ -8,7 +8,7 @@
       <!-- Statistics Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 mt-1 gap-4">
         <div
-          class=" container1  shadow-lg rounded-md flex items-center justify-between p-3 dark:border-gray-600 text-blue-950 font-medium group">
+          class=" container1  shadow-lg rounded-2xl flex items-center justify-between p-3 dark:border-gray-600 text-blue-950 font-medium group">
           <div
             class="flex justify-center items-center w-14 h-14  rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
@@ -32,7 +32,7 @@
             </div>
           </div> -->
         <div
-          class="container2 shadow-lg rounded-md flex items-center justify-between p-3  dark:border-gray-600 text-blue-950 font-medium group">
+          class="container2 shadow-lg rounded-2xl flex items-center justify-between p-3  dark:border-gray-600 text-blue-950 font-medium group">
           <div
             class="flex justify-center items-center w-14 h-14   rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div
-          class="container3 shadow-lg rounded-md flex items-center justify-between p-3  text-blue-950 font-medium group">
+          class="container3 shadow-lg rounded-2xl flex items-center justify-between p-3  text-blue-950 font-medium group">
           <div
             class="flex justify-center items-center w-14 h-14   rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48"
@@ -70,7 +70,7 @@
           <h3 class="text-lg font-semibold text-white">Task summaries of recent tasks</h3>
         </div>
         <div class="md:col-span-2 xl:col-span-1">
-          <div class="rounded bg-gray-900  p-3">
+          <div class="rounded-2xl bg-gray-900  p-3">
             <div class="flex justify-between py-1  ">
               <h3 class="text-sm font-semibold text-white">Completed Tasks</h3>
             </div>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <div class="md:col-span-2 xl:col-span-1">
-          <div class="rounded bg-gray-900  p-3">
+          <div class="rounded-2xl bg-gray-900  p-3">
             <div class="flex justify-between py-1  ">
               <h3 class="text-sm font-semibold text-white">Remaining Tasks</h3>
             </div>
