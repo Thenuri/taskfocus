@@ -4,8 +4,8 @@
             <div class="font-bold self-center text-3xl sm:text-3xl text-color-primary">
                 Login Now
             </div>
-            <div class="mt-4  self-center text-base sm:text-sm sm:text-center text-color-primary-light">
-                Enter your credentials to get access account
+            <div class="mt-4  self-center text-base sm:text-xs sm:text-center text-color-primary-light">
+                Enter your credentials to get access to your account
             </div>
             <div class="mt-10">
                 <form action="#">
@@ -18,7 +18,7 @@
                                 <i class="fas fa-at text-orange-500"></i>
                             </div>
                             <input id="email" type="email" name="email" v-model="email" 
-                                class="  text-sm  placeholder-gray-500  pl-10  pr-4  text-gray-600 rounded-xl  border border-gray-400  w-full   py-2  focus:outline-none focus:border-orange-400 "
+                                class="  text-sm  placeholder-gray-500  pl-5  pr-4  text-gray-600 rounded-xl  border border-gray-400  w-full   py-2  focus:outline-none focus:border-orange-400 "
                                 placeholder="Enter your email" />
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             </div>
 
                             <input id="password" type="password" name="password" v-model="password"
-                                class="text-sm  placeholder-gray-500  pl-10  pr-4  text-gray-600  rounded-xl   border border-gray-400   w-full  py-2 focus:outline-none focus:border-orange-400  "
+                                class="text-sm  placeholder-gray-500  pl-5  pr-4  text-gray-600  rounded-xl   border border-gray-400   w-full  py-2 focus:outline-none focus:border-orange-400  "
                                 placeholder="Enter your password" />
                         </div>
                     </div>
