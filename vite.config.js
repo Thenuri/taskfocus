@@ -49,7 +49,7 @@ export default defineConfig({
         display: 'fullscreen',
         scope: '/',
         start_url: '/',
-        orientation: 'portrait',
+        orientation: 'portrait,landscape',
       }, 
       workbox:{
         // globDirectory: 'src/assets', // Specify the base directory
