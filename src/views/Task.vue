@@ -262,7 +262,7 @@ button {
     /* outline: none; */
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     /* cursor: pointer; */
     /* font-size: 16px; */
     /* border-radius: 20px; */

@@ -13,7 +13,7 @@
                     Manage your work efficiently.
                     </h1>
                     <p class="text-white leading-relaxed  mb-10">TaskFocus empowers you to effortlessly manage your daily tasks and ad-hoc functions. Say goodbye to chaos and hello to efficiency. With TaskFocus, you can stay sharp, work smarter, and maintain unwavering focus at the touch of a button. Let TaskFocus be your trusted companion in conquering your daily challenges and achieving your goals.</p>
-                    <btn class="mt-2">Get Started</btn>
+                    <router-link to="/Signup"><btn class="mt-2">Get Started</btn></router-link>
                 </div>
                 <div class="md:w-1/2 ">
                     <img src="../assets/web12.png" alt="">
@@ -77,6 +77,6 @@ export default {
 
 <style>
 .box{
-margin-left: 100px;
+margin-left: 107px;
 }
 </style>
