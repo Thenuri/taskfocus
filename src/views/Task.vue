@@ -11,9 +11,9 @@
                         <div class="container">
                             <div class="task-list">
                                 <h2>Task List<img src="../assets/list.png"></h2>
-                                <div class=" flex rounded-2xl bg-gray-800">
-                                    <input type="text" v-model="taskInput" placeholder="Add Task" @keyup.enter="addTask">
-                                    <button class="bg-orange-500  hover:bg-orange-600 duration-300 px-4" @click="addTaskWithVibration">Add</button>
+                                <div class=" flex  rounded-2xl bg-gray-800">
+                                    <input type="text" class="pl-2" v-model="taskInput" placeholder="Add Task" @keyup.enter="addTask">
+                                    <button class="bg-orange-500   hover:bg-orange-600 duration-300  rounded-2xl px-2" @click="addTaskWithVibration">Add</button>
                                 </div>
                                 <ul>
                                     <li v-for="(task, index) in tasks" :key="index"
@@ -235,7 +235,7 @@ export default {
     margin-left: 10px;
 }
 
-.row {
+/* .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -244,27 +244,28 @@ export default {
     padding-left: 20px;
     margin-bottom: 25px;
 
-}
+} */
 
 input {
-    flex: 1;
+    /* flex: 1; */
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
-    font-weight: 14px;
-    border-radius: 20px;
+    /* margin-left: 10px; */
+    /* font-weight: 14px; */
+    /* border-radius: 20px; */
 
 }
 
 button {
-    border: none;
-    outline: none;
+    /* border: none; */
+    /* outline: none; */
     padding-top: 10px;
     padding-bottom: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 20px;
+    margin-right: 10px;
+    /* cursor: pointer; */
+    /* font-size: 16px; */
+    /* border-radius: 20px; */
 
 }
 
