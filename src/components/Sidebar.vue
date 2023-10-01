@@ -121,11 +121,11 @@
                         <span class="ml-2 text-sm tracking-wide truncate">Pomodoro Timer</span>
                     </router-link>
                 </li>
-                <li class="px-5 hidden md:block">
+                <!-- <li class="px-5 hidden md:block">
                     <div class="flex flex-row items-center mt-5 h-8">
                         <div class="text-sm font-light tracking-wide text-gray-400 uppercase">Settings</div>
                     </div>
-                </li>
+                </li> -->
                 <!-- <li>
                     <router-link to="#"
                         class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-orange-500 rounded  border-l-4 border-transparent  dark:hover:border-gray-800 pr-6">
