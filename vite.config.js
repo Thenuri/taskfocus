@@ -18,8 +18,8 @@ export default defineConfig({
       },
       // includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'], 
       manifest: {
-        name: 'Task App',
-        short_name: 'App',
+        name: 'TaskFocus',
+        short_name: 'TaskFocus',
         description: 'Website description(Could be same with index.html file)',  
         icons: [
           {
@@ -44,7 +44,7 @@ export default defineConfig({
           }
         ],
         theme_color: '#ffffff',
-        background_color: '#dddddd',
+        background_color: '#01051e',
         // display: 'standalone',
         display: 'fullscreen',
         scope: '/',

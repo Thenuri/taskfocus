@@ -7,13 +7,13 @@
                 <!-- Statistics Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-4 mt-1 gap-4">
                     <div
-                        class="bg-gray-700-900  dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
+                        class="bg-gray-900  dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
                         <div class="container">
                             <div class="task-list">
                                 <h2>Task List<img src="../assets/list.png"></h2>
-                                <div class="row bg-gray-800">
+                                <div class="row  bg-gray-800">
                                     <input type="text" v-model="taskInput" placeholder="Add Task" @keyup.enter="addTask">
-                                    <button class="w-20  bg-color-secondary " @click="addTaskWithVibration">Add</button>
+                                    <button class="w-10 mr-40 bg-color-secondary " @click="addTaskWithVibration">Add</button>
                                 </div>
                                 <ul>
                                     <li v-for="(task, index) in tasks" :key="index"

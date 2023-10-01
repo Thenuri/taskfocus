@@ -1,16 +1,16 @@
 <template>
     <div>
         <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-2xl w-50 max-w-md">
-            <div class="font-bold self-center text-xl sm:text-3xl text-color-primary">
+            <div class="font-bold self-center text-3xl sm:text-3xl text-color-primary">
                 Signup Now
             </div>
-            <div class="mt-4 font-semibold self-center text-base sm:text-sm text-color-primary-light">
+            <div class="mt-4 self-center justify-center text-base sm:text-sm text-color-primary-light">
                 Enter your credentials to get access account
             </div>
             <div class="mt-10">
                 <form action="#">
                     <div class="flex flex-col mb-5">
-                        <label for="email" class="mb-1 text-xs tracking-wide text-color-primary-dark font-medium">E-Mail
+                        <label for="email" class="mb-1 text-sm tracking-wide text-color-primary-dark font-medium">E-Mail
                             Address:</label>
                         <div class="relative">
                             <div
@@ -23,10 +23,10 @@
                         </div>
                     </div>
                     <div class="flex flex-col mb-6">
-                        <label for="password" class="mb-1 text-xs  tracking-wide text-color-primary-dark font-medium">Password:</label>
+                        <label for="password" class="mb-1 text-sm  tracking-wide text-color-primary-dark font-medium">Password:</label>
                         <div class="relative">
                             <div
-                                class="  inline-flex  items-center  justify-center  absolute  left-0  top-0  h-full  w-10  text-gray-400">
+                                class="  inline-flex  items-center  justify-center  absolute  left-0  top-0  h-full  w-10  text-black">
                                 <span>
                                     <i class="fas fa-lock text-orange-500"></i>
                                 </span>
@@ -50,7 +50,7 @@
                         </button>
                     </div>
                     <div>
-                        <p class="text-center mt-4  text-color-primary-dark font-medium">
+                        <p class="text-center mt-4  text-color-primary-dark ">
                             Or
                         </p>
                     </div>
