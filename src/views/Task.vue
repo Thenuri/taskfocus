@@ -2,12 +2,12 @@
     <div class="task">
         <Sidebar />
         <div
-            class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiase dark:bg-gray-700 text-black dark:text-white">
+            class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiase  text-black ">
             <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
                 <!-- Statistics Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-4 mt-1 gap-4">
                     <div
-                        class="bg-gray-900  dark:bg-gray-800 shadow-lg rounded-2xl flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
+                        class="bg-gray-900   shadow-lg rounded-2xl flex items-center justify-between p-3 border-b-4 border-color-secondary  text-white font-medium group">
                         <div class="container">
                             <div class="task-list">
                                 <h2>Task List<img src="../assets/list.png"></h2>
