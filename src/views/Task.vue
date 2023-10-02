@@ -11,9 +11,9 @@
                         <div class="container">
                             <div class="task-list">
                                 <h2>Task List<img src="../assets/list.png"></h2>
-                                <div class="row bg-slate-700">
+                                <div class="row bg-gray-800">
                                     <input type="text" v-model="taskInput" placeholder="Add Task" @keyup.enter="addTask">
-                                    <button class="w-20  bg-color-secondary" @click="addTaskWithVibration">Add</button>
+                                    <button class="w-20  bg-color-secondary " @click="addTaskWithVibration">Add</button>
                                 </div>
                                 <ul>
                                     <li v-for="(task, index) in tasks" :key="index"
@@ -35,6 +35,7 @@
 </template>
   
 <script>
+
 import Sidebar from "../components/Sidebar.vue";
 import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -66,10 +67,18 @@ export default {
                 const response = await this.$http.get(
                     "https://emojihub.yurace.pro/api/random/group/face-positive"
                 );
-                console.log(response.data);
-                this.posts = response.data;
+                if (response.data) {
+                    console.log(response.data);
+                    this.posts = response.data;
+                    this.sendTaskCompletedNotification();
+                } else {
+                    console.log('API response is empty.');
+                    this.sendHardcodedNotification();
+                }
             } catch (error) {
                 console.error(error);
+                console.log('API call failed.');
+                // this.sendHardcodedNotification();
             }
         },
         addTask() {
@@ -88,10 +97,18 @@ export default {
                 this.saveData();
                 // Check if the task is completed and notifications are enabled
                 if (this.tasks[index].completed && this.$store.getters.notificationEnabled) {
-                    this.sendTaskCompletedNotification(index);
+                    // Check if the API response is available
+                    if (this.posts && this.posts.htmlCode && this.posts.htmlCode[0]) {
+                        // API response is available, send API-based notification
+                        this.sendTaskCompletedNotification(index);
+                    } else {
+                        // API response is not available, send hardcoded notification
+                        this.sendHardcodedNotification();
+                    }
                 }
             }
         },
+
         removeTask(index) {
             this.tasks.splice(index, 1);
             this.saveData();
@@ -120,7 +137,7 @@ export default {
 
             calendar.render();
         },
-        
+
         sendTaskCompletedNotification(index) {
             if (this.$store.getters.notificationEnabled && this.tasks[index] && this.tasks[index].completed) {
                 // Check if the Notification API is supported
@@ -155,7 +172,34 @@ export default {
                 }
             }
         },
-        
+        sendHardcodedNotification() {
+            if (this.$store.getters.notificationEnabled) {
+                // Check if the Notification API is supported
+                if ('Notification' in window) {
+                    // Request permission to show notifications
+                    Notification.requestPermission().then((permission) => {
+                        if (permission === 'granted') {
+                            // Create a hardcoded notification message
+                            let body = 'Your Task is completed 😊🎁🥳';
+
+                            const options = {
+                                body,
+                            };
+
+                            // Use ServiceWorkerRegistration.showNotification() to display the notification
+                            navigator.serviceWorker.ready.then((registration) => {
+                                registration.showNotification('Hardcoded Task Notification', options);
+                            });
+                        } else {
+                            console.warn('Notification permission denied or ignored.');
+                        }
+                    });
+                } else {
+                    console.warn('Notification API not supported.');
+                }
+            }
+        },
+
         addTaskWithVibration() {
             this.addTask(); // Call the existing addTask method
             // Check if vibration is supported

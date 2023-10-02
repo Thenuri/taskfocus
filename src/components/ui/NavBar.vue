@@ -1,6 +1,6 @@
 <template>
     <div id="nav_container">
-        <nav-button btn-title="pomodoro"
+        <nav-button  btn-title="pomodoro"
             :class="{btn_item_active: activeTab === 'poroModo'}"
             @click="()=>{
                 reSelectTab('poroModo')
@@ -37,7 +37,7 @@ export default {
 </script>
 <style scoped>
    #nav_container{
-        background: #313560;
+        background: rgb(13, 7, 41);
         width: 320px;
         height: 50px;
         display: flex;

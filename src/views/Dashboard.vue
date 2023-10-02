@@ -8,9 +8,9 @@
       <!-- Statistics Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 mt-1 gap-4">
         <div
-          class="bg-gray-900 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
+          class=" container1  shadow-lg rounded-md flex items-center justify-between p-3 dark:border-gray-600 text-blue-950 font-medium group">
           <div
-            class="flex justify-center items-center w-14 h-14 bg-color-secondary rounded-full transition-all duration-300 transform group-hover:rotate-12">
+            class="flex justify-center items-center w-14 h-14  rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
               class="stroke-current text-white dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
               <path fill="white"
@@ -32,9 +32,9 @@
             </div>
           </div> -->
         <div
-          class="bg-gray-900 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
+          class="container2 shadow-lg rounded-md flex items-center justify-between p-3  dark:border-gray-600 text-blue-950 font-medium group">
           <div
-            class="flex justify-center items-center w-14 h-14  bg-color-secondary rounded-full transition-all duration-300 transform group-hover:rotate-12">
+            class="flex justify-center items-center w-14 h-14   rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
               class="stroke-current text-white dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
@@ -47,9 +47,9 @@
           </div>
         </div>
         <div
-          class="bg-gray-900 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-color-secondary dark:border-gray-600 text-white font-medium group">
+          class="container3 shadow-lg rounded-md flex items-center justify-between p-3  text-blue-950 font-medium group">
           <div
-            class="flex justify-center items-center w-14 h-14  bg-color-secondary rounded-full transition-all duration-300 transform group-hover:rotate-12">
+            class="flex justify-center items-center w-14 h-14   rounded-full transition-all duration-300 transform group-hover:rotate-12">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48"
               class="stroke-current  dark:text-gray-800 transform transition-transform duration-500 ease-in-out">
               <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
@@ -67,7 +67,7 @@
       <!-- Task Summaries -->
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 p-4 gap-4 ">
         <div class="md:col-span-2 xl:col-span-3">
-          <h3 class="text-lg font-semibold text-white">Task summaries of recent sprints</h3>
+          <h3 class="text-lg font-semibold text-white">Task summaries of recent tasks</h3>
         </div>
         <div class="md:col-span-2 xl:col-span-1">
           <div class="rounded bg-gray-900  p-3">
@@ -76,7 +76,7 @@
             </div>
             <ul class="text-sm text-black dark:text-gray-50 mt-2">
               <li v-for="(task, index) in completedTaskList" :key="index"
-                class="bg-gray-600 h d p-2 rounded mt-1  text-white  cursor-pointer">{{ task.text }}</li>
+                class="bg-gray-800 h d p-2 rounded mt-1  text-white  cursor-pointer">{{ task.text }}</li>
 
             </ul>
           </div>
@@ -88,7 +88,7 @@
             </div>
             <ul class="text-sm text-black  mt-2">
               <li v-for="(task, index) in remainingTaskList" :key="index"
-                class=" bg-gray-600   p-2 rounded mt-1 text-white cursor-pointer"> {{ task.text }}</li>
+                class=" bg-gray-800   p-2 rounded mt-1 text-white cursor-pointer"> {{ task.text }}</li>
 
             </ul>
           </div>
@@ -96,17 +96,18 @@
       </div>
     </div>
   </div>
+  <Foot/>
 </template>
 
 <script>
 import { computed } from 'vue';
-
+import Foot from '../views/Foot.vue'
 import Sidebar from "../components/Sidebar.vue";
 export default {
   name: "Dashboard",
   components: {
     Sidebar,
-   
+   Foot
   },
   data() {
     return {
@@ -145,3 +146,16 @@ export default {
   }
 };
 </script>
+
+<style>
+.container1{
+  background: linear-gradient(to right, #017b73, white);
+}
+.container2{
+  background: linear-gradient(to right, rgb(238, 53, 83), white);
+}
+.container3{
+  background: linear-gradient(to right, purple, white);
+
+}
+</style>

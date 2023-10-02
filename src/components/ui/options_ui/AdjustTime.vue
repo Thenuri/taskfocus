@@ -1,12 +1,12 @@
 <template>
   <div class="wraper">
-    <label  class=" text-slate-900  block mb-4 font-semibold" for="inp">{{ lable }}</label>
-    <div class="input_number border-2 rounded h-10 w-20 overflow-hidden  p-0 pb-1 pl-2 flex justify-center align-middle ">
-      <input class="bg-transparent w-full border-0 outline-none" type="number"  max="120" min="0" :value="time" disabled />
-      <div class="controle_btns w-12 h-full grid items-center overflow-hidden" :style="contorl_btn_style">
-        <div class="arrow btn_top transform rotate-180 " @click="$emit('plusCount')">
+    <label  class=" text-black   block mb-4 font-semibold" for="inp">{{ lable }}</label>
+    <div class="input_number text-white bg-color-primary border-2 rounded h-10 w-20 overflow-hidden  p-0 pb-1 pl-2 flex justify-center align-middle ">
+      <input class="  bg-black w-full border-0 outline-none" type="number"  max="120" min="0" :value="time" disabled />
+      <div class="controle_btns  w-12 h-full grid items-center overflow-hidden" :style="contorl_btn_style">
+        <div class="arrow btn_top   transform rotate-180 " @click="$emit('plusCount')">
           <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
-            style="fill: #000000">
+            >
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
               font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">

@@ -7,9 +7,9 @@
                 <!-- Statistics Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 p-4 mt-1 gap-4">
                     <div
-                        class="bg-gray-900 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 dark:border-gray-600 text-white font-medium group">
+                        class=" shadow-lg rounded-md flex items-center justify-between p-3 dark:border-gray-600 text-white font-medium group">
                         <div class="container">
-                            <div class="settings-container bg-color-primary-light rounded-2xl border border-orange-500">
+                            <div class="settings-container bg-gray-900 rounded-2xl border border-orange-500">
                                 <div class="setting">
                                     <span class="mr-10">Turn on Notifications</span>
                                     <label class="toggle">
@@ -25,13 +25,6 @@
                                         <span class="slider"></span>
                                     </label>
                                 </div>
-                                <div class="setting">
-                                    <span class="mr-16">Turn on Vibration</span>
-                                    <label class="toggle">
-                                        <input type="checkbox" v-model="vibrationEnabled" />
-                                        <span class="slider"></span>
-                                    </label>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -39,15 +32,18 @@
             </div>
         </div>
     </div>
+    <Foot/>
 </template>
   
 <script>
+import Foot from '../views/Foot.vue'
 import Sidebar from '../components/Sidebar.vue';
 import { mapActions } from 'vuex';
 
 export default {
     components: {
         Sidebar,
+        Foot
     },
     computed: {
         vibrationEnabled: {
@@ -166,7 +162,7 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #7a6f6f;
     transition: 0.4s;
     border-radius: 34px;
 }

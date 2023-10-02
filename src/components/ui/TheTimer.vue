@@ -152,12 +152,12 @@ export default {
 
 <style scoped>
 .container {
-  box-shadow: 0px 0px 80px 12px #4d528f;
+  box-shadow: 0px 0px 80px 12px #472a60;
   user-select: none;
   background: linear-gradient(
     -90deg,
-    rgb(120, 123, 156) 0%,
-    rgb(47, 64, 174) 100%
+    rgb(27, 7, 142) 0%,
+    rgb(13, 119, 190) 100%
   );
   height: 280px;
   width: 280px;

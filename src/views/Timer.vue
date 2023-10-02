@@ -46,7 +46,7 @@
       <!-- the options view (window) -->
       <keep-alive>
 
-        <options-view v-if="optionsVisible" header_title="Setings" :colors="colors" :pomodoroTime="pomodoro_inp"
+        <options-view v-if="optionsVisible" header_title="Settings" :colors="colors" :pomodoroTime="pomodoro_inp"
           :shortBreakTime="short_break_inp" :longBreakTime="long_break_inp" @options-close-event="optionsVisible = false"
           @change-default-color="changeCssVars" @pomodoroTime-change="(data) => (pomodoro_inp = data)"
           @shortBreak-change="(data) => (short_break_inp = data)" @longBreak-change="(data) => (long_break_inp = data)"
@@ -66,9 +66,11 @@
     <!-- #wraper -->
 
   </div>
+  <Foot/>
 </template>
 
 <script>
+import Foot from '../views/Foot.vue'
 import Sidebar from "../components/Sidebar.vue";
 import NavBar from "../components/ui/NavBar.vue";
 import PoroModo from "../components/ui/PoroModo.vue";
@@ -101,6 +103,7 @@ components: {
     OptionsView,
     PauseBefore,
     Sidebar,
+    Foot
   },
 
 data() {

@@ -1,16 +1,16 @@
 <template>
     <div>
-        <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 max-w-md">
-            <div class="font-medium self-center text-xl sm:text-3xl text-gray-800">
-                Join us Now
+        <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-2xl w-50 max-w-md">
+            <div class="font-bold self-center text-xl sm:text-3xl text-color-primary">
+                Signup Now
             </div>
-            <div class="mt-4 self-center text-xl sm:text-sm text-gray-800">
+            <div class="mt-4 font-semibold self-center text-base sm:text-sm text-color-primary-light">
                 Enter your credentials to get access account
             </div>
             <div class="mt-10">
                 <form action="#">
                     <div class="flex flex-col mb-5">
-                        <label for="email" class="mb-1 text-xs tracking-wide text-gray-600">E-Mail
+                        <label for="email" class="mb-1 text-xs tracking-wide text-color-primary-dark font-medium">E-Mail
                             Address:</label>
                         <div class="relative">
                             <div
@@ -18,12 +18,12 @@
                                 <i class="fas fa-at text-orange-500"></i>
                             </div>
                             <input id="email" type="email" name="email"
-                                class="  text-sm  placeholder-gray-500  pl-10  pr-4  rounded-2xl  border border-gray-400 text-gray-600 w-full   py-2  focus:outline-none focus:border-orange-400 "
+                                class="  text-sm  placeholder-gray-500  pl-10  pr-4  rounded-xl  border border-gray-400 text-gray-600 w-full   py-2  focus:outline-none focus:border-orange-400 "
                                 placeholder="Enter your email" required v-model="email" />
                         </div>
                     </div>
                     <div class="flex flex-col mb-6">
-                        <label for="password" class="mb-1 text-xs  tracking-wide text-gray-600">Password:</label>
+                        <label for="password" class="mb-1 text-xs  tracking-wide text-color-primary-dark font-medium">Password:</label>
                         <div class="relative">
                             <div
                                 class="  inline-flex  items-center  justify-center  absolute  left-0  top-0  h-full  w-10  text-gray-400">
@@ -33,13 +33,13 @@
                             </div>
 
                             <input id="password" type="password" name="password"
-                                class="text-sm  placeholder-gray-500  pl-10  pr-4   rounded-2xl   border border-gray-400 text-gray-600  w-full  py-2 focus:outline-none focus:border-orange-400"
+                                class="text-sm  placeholder-gray-500  pl-10  pr-4   rounded-xl   border border-gray-400 text-gray-600  w-full  py-2 focus:outline-none focus:border-orange-400"
                                 placeholder="Enter your password" v-model="password" />
                         </div>
                     </div>
                     <div class="flex w-full">
                         <button @click="register"
-                            class="  flex  mt-2   items-center  justify-center  focus:outline-none  text-white text-sm  sm:text-base  bg-orange-500 hover:bg-orange-600  rounded-2xl  py-2  w-full transition  duration-150  ease-in ">
+                            class="  flex  mt-2   items-center  justify-center  focus:outline-none  text-white text-sm  sm:text-base  bg-orange-500 hover:bg-orange-600  rounded-xl  py-2  w-full transition  duration-150  ease-in ">
                             <span class="mr-2 uppercase">Sign Up</span>
                             <span>
                                 <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -50,13 +50,13 @@
                         </button>
                     </div>
                     <div>
-                        <p class="text-center mt-4 text-gray-500 text-xs">
+                        <p class="text-center mt-4  text-color-primary-dark font-medium">
                             Or
                         </p>
                     </div>
                     <div class="mt-3">
                         <button @click="signInWithGoogle"
-                            class=" text-gray-600 flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-2xl">
+                            class=" text-gray-600 flex flex-wrap justify-center w-full border border-gray-400 hover:border-gray-500 px-2 py-1.5 rounded-xl">
                             <img class="w-5 mr-2"
                                 src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA">
                             Sign in with Google
@@ -66,9 +66,9 @@
             </div>
         </div>
         <div class="flex justify-center items-center mt-6">
-            <router-link to="#" target="_blank" class="inline-flex items-center text-gray-700  font-medium  text-xs text-center">
-                <span class="ml-2">You have an account?
-                    <router-link to="#" class="text-xs ml-2 text-orange-500 font-semibold">Login here</router-link></span>
+            <router-link to="#" target="_blank" class="inline-flex items-center  font-medium  text-xs text-center">
+                <span class="ml-2">Have an account?
+                    <router-link to="/login" class="text-xs ml-2 text-orange-500 font-semibold">Login here</router-link></span>
             </router-link>
         </div>
     </div>
