@@ -9,9 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.9",
+    "@fullcalendar/daygrid": "^6.1.9",
+    "axios": "^1.5.1",
+    "chart.js": "^4.4.0",
     "firebase": "^10.3.1",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.2.4",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

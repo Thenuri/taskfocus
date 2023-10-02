@@ -16,7 +16,7 @@
                     <btn class="mt-2">Get Started</btn>
                 </div>
                 <div class="md:w-1/2 ">
-                    <img src="../assets/web9 (1).png" alt="">
+                    <img src="../assets/web9.png" alt="">
                 </div>
             </div>
         </div>

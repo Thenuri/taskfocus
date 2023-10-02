@@ -6,6 +6,7 @@ import Signup from '../views/Signup.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Task from '../views/Task.vue'
 import Timer from '../views/Timer.vue'
+import Settings from '../views/Settings.vue'
 
 
 const routes = [
@@ -48,6 +49,11 @@ const routes = [
     meta: {
       requiresAuth: true,
     },
+  },
+  {
+    path:'/Settings',
+    name: 'settings',
+    component: Settings,
   }
 
 ]

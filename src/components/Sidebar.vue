@@ -3,14 +3,14 @@
 
 
     <!-- Header -->
-    <div class="fixed w-full flex items-center justify-between h-14 text-white z-10">
+    <div class="fixed w-full flex items-center bg-color-primary-light justify-between h-14 text-white z-10 ">
         <div class="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 dark:bg-gray-800 border-none">
         </div>
         <div class="flex justify-between items-center h-14 dark:bg-gray-800 header-right">
             <!--  -->
             <ul class="flex items-center">
                 <li>
-                    <router-link to="#"
+                    <router-link to="/Settings"
                         class="relative flex flex-row items-center h-11 focus:outline-none  dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent  dark:hover:border-gray-800 pr-6">
                         <span class="inline-flex justify-center items-center  ">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"

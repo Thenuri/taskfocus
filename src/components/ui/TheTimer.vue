@@ -41,6 +41,7 @@ export default {
       if (pers === 100) {
         const audio = new Audio(successMp3);
         audio.play();
+        
       }
     },
     start: function () {
@@ -65,6 +66,13 @@ export default {
   },
 
   methods: {
+  //   triggerVibration() {
+  //   if (navigator.vibrate) {
+  //     // Vibrate for 5 seconds (you can adjust the pattern as needed)
+  //   } else {
+  //     console.warn('Vibration not supported in this browser.');
+  //   }
+  // },
     click_reset() {
       this.count();
       this.resetTimer();
